@@ -4,21 +4,17 @@
 //
 //  Created by Agrima Purakkal on 13/4/2024.
 //
-
+// By default swiftUI files declare a structure and a preview
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+      LandmarkList()
     }
 }
 
 #Preview {
     ContentView()
+        .environment(ModelData())
 }
